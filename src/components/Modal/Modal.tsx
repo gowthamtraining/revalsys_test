@@ -3,13 +3,7 @@
 import React from 'react';
 import { X } from 'lucide-react';
 import { useModal } from './useModal';
-
-export interface ModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-  title: string;
-  children: React.ReactNode;
-}
+import { ModalProps } from './type';
 
 export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
   const { shouldRender } = useModal({ isOpen });

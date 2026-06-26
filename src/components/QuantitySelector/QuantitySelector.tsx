@@ -2,14 +2,8 @@ import React from 'react';
 import { Minus, Plus } from 'lucide-react';
 
 import { useQuantitySelector } from './useQuantitySelector';
+import { QuantitySelectorProps } from './type';
 
-export interface QuantitySelectorProps {
-  quantity: number;
-  max: number;
-  min?: number;
-  onChange: (value: number) => void;
-  className?: string;
-}
 
 export const QuantitySelector: React.FC<QuantitySelectorProps> = ({
   quantity,

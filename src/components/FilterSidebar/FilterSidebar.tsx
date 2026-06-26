@@ -5,12 +5,8 @@ import categoriesData from '../../data/categories.json';
 import { SORT_OPTIONS } from '../../constants/filters';
 import { X, SlidersHorizontal } from 'lucide-react';
 import { useFilterSidebar } from './useFilterSidebar';
+import { FilterSidebarProps } from './types';
 
-export interface FilterSidebarProps {
-  isOpen?: boolean;
-  onClose?: () => void;
-  className?: string;
-}
 
 export const FilterSidebar: React.FC<FilterSidebarProps> = ({
   isOpen = false,
@@ -28,9 +24,8 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
 
   return (
     <aside
-      className={`w-full bg-bg-card border border-border-main rounded-2xl p-6 shadow-sm space-y-6 ${
-        isOpen ? 'block' : 'hidden lg:block'
-      } ${className}`}
+      className={`w-full bg-bg-card border border-border-main rounded-2xl p-6 shadow-sm space-y-6 ${isOpen ? 'block' : 'hidden lg:block'
+        } ${className}`}
     >
       <div className="flex items-center justify-between pb-4 border-b border-border-main">
         <h3 className="font-bold text-txt-main text-lg flex items-center gap-2">
@@ -57,11 +52,10 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
           <button
             type="button"
             onClick={() => changeCategory('all')}
-            className={`w-full text-left px-3 py-2 rounded-xl text-sm font-medium transition-all cursor-pointer ${
-              filters.category === 'all'
-                ? 'bg-brand-primary/10 text-brand-primary font-semibold'
-                : 'text-txt-muted hover:text-txt-main hover:bg-bg-alt'
-            }`}
+            className={`w-full text-left px-3 py-2 rounded-xl text-sm font-medium transition-all cursor-pointer ${filters.category === 'all'
+              ? 'bg-brand-primary/10 text-brand-primary font-semibold'
+              : 'text-txt-muted hover:text-txt-main hover:bg-bg-alt'
+              }`}
           >
             All Categories
           </button>
@@ -70,11 +64,10 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
               key={cat.id}
               type="button"
               onClick={() => changeCategory(cat.slug)}
-              className={`w-full text-left px-3 py-2 rounded-xl text-sm font-medium transition-all cursor-pointer ${
-                filters.category === cat.slug
-                  ? 'bg-brand-primary/10 text-brand-primary font-semibold'
-                  : 'text-txt-muted hover:text-txt-main hover:bg-bg-alt'
-              }`}
+              className={`w-full text-left px-3 py-2 rounded-xl text-sm font-medium transition-all cursor-pointer ${filters.category === cat.slug
+                ? 'bg-brand-primary/10 text-brand-primary font-semibold'
+                : 'text-txt-muted hover:text-txt-main hover:bg-bg-alt'
+                }`}
             >
               {cat.name}
             </button>

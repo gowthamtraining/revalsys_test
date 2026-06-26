@@ -1,13 +1,6 @@
 import React from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-
-export interface PaginationProps {
-  currentPage: number;
-  totalPages: number;
-  onPageChange: (page: number) => void;
-  hasPrev: boolean;
-  hasNext: boolean;
-}
+import { PaginationProps } from './types';
 
 export const Pagination: React.FC<PaginationProps> = ({
   currentPage,
@@ -38,11 +31,10 @@ export const Pagination: React.FC<PaginationProps> = ({
             key={pageNum}
             type="button"
             onClick={() => onPageChange(pageNum)}
-            className={`px-4 py-2 text-sm font-semibold rounded-lg border transition-all cursor-pointer ${
-              isActive
+            className={`px-4 py-2 text-sm font-semibold rounded-lg border transition-all cursor-pointer ${isActive
                 ? 'bg-brand-primary border-brand-primary text-white shadow-sm'
                 : 'border-border-main bg-bg-card hover:bg-bg-alt text-txt-muted hover:text-txt-main'
-            }`}
+              }`}
           >
             {pageNum}
           </button>

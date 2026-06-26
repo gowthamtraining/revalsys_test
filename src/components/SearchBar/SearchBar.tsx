@@ -2,13 +2,9 @@
 
 import React from 'react';
 import { Search, X } from 'lucide-react';
+import { SearchBarProps } from './type';
 
-export interface SearchBarProps {
-  value: string;
-  onChange: (value: string) => void;
-  placeholder?: string;
-  className?: string;
-}
+
 
 export const SearchBar: React.FC<SearchBarProps> = ({
   value,

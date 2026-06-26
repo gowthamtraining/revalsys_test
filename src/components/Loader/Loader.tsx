@@ -1,9 +1,7 @@
 import React from 'react';
+import { LoaderProps } from './type';
 
-export interface LoaderProps {
-  variant?: 'spinner' | 'skeleton-card' | 'skeleton-grid' | 'skeleton-details';
-  count?: number;
-}
+
 
 export const Loader: React.FC<LoaderProps> = ({ variant = 'spinner', count = 1 }) => {
   if (variant === 'spinner') {
