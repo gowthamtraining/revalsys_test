@@ -20,9 +20,9 @@ export default function LoginPage() {
           <span className="inline-flex p-3 bg-brand-primary/10 text-brand-primary rounded-2xl mb-4">
             <User className="w-8 h-8" />
           </span>
-          <h2 className="text-3xl font-extrabold text-txt-main tracking-tight">
+          <h1 className="text-3xl font-extrabold text-txt-main tracking-tight">
             Welcome to ElectroShow
-          </h2>
+          </h1>
           <p className="mt-2 text-sm text-txt-muted leading-relaxed">
             Log in to manage your cart, wishlist, and experience secure simulated checkouts.
           </p>

@@ -16,6 +16,7 @@ export default function HomePage() {
 
   return (
     <div className="space-y-16 pb-16">
+      <h1 className="sr-only">ElectroShow - Premium Electronics Product Showcase</h1>
       {/* Hero Banner */}
       <Hero />
 
