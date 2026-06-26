@@ -1,0 +1,44 @@
+[
+  {
+    "id": "cat-1",
+    "name": "Laptop",
+    "slug": "laptop",
+    "description": "High performance computing devices for work, play, and everything in between."
+  },
+  {
+    "id": "cat-2",
+    "name": "Mobile",
+    "slug": "mobile",
+    "description": "Premium smartphones with advanced cameras, screens, and AI features."
+  },
+  {
+    "id": "cat-3",
+    "name": "Smart Watch",
+    "slug": "smart watch",
+    "description": "Rugged and stylish wearables for fitness tracking, notifications, and health monitoring."
+  },
+  {
+    "id": "cat-4",
+    "name": "Headphones",
+    "slug": "headphones",
+    "description": "Immersive over-ear and in-ear audio equipment with advanced noise cancellation."
+  },
+  {
+    "id": "cat-5",
+    "name": "Keyboard",
+    "slug": "keyboard",
+    "description": "Tactile and mechanical keyboards designed for speed, comfort, and customizability."
+  },
+  {
+    "id": "cat-6",
+    "name": "Mouse",
+    "slug": "mouse",
+    "description": "Ergonomic and gaming mice featuring high DPI tracking and tactile click response."
+  },
+  {
+    "id": "cat-7",
+    "name": "Monitor",
+    "slug": "monitor",
+    "description": "Ultra-sharp 4K and high refresh rate OLED displays for gaming and productivity."
+  }
+]

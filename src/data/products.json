@@ -1,0 +1,464 @@
+[
+  {
+    "id": "prod-1",
+    "name": "MacBook Pro 16\" M3 Max",
+    "category": "laptop",
+    "price": 2499.00,
+    "rating": 4.9,
+    "description": "Supercharged by M3 Max chip, the MacBook Pro 16-inch delivers extraordinary performance for pro workflows. With up to 22 hours of battery life and a stunning Liquid Retina XDR display, it is the ultimate pro laptop.",
+    "specifications": {
+      "Processor": "Apple M3 Max (16-core CPU, 40-core GPU)",
+      "Memory": "48GB Unified Memory",
+      "Storage": "1TB NVMe SSD",
+      "Display": "16.2-inch Liquid Retina XDR (3456 x 2234)",
+      "Battery Life": "Up to 22 hours",
+      "Weight": "2.16 kg (4.8 lbs)"
+    },
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80",
+    "featured": true,
+    "stock": 12
+  },
+  {
+    "id": "prod-2",
+    "name": "Dell XPS 15 9530",
+    "category": "laptop",
+    "price": 1899.00,
+    "rating": 4.7,
+    "description": "The perfect balance of power and portability. The XPS 15 features an stunning OLED touch display, NVIDIA GeForce RTX graphics, and an elegant CNC aluminum design.",
+    "specifications": {
+      "Processor": "Intel Core i7-13700H (14-Core, up to 5.0 GHz)",
+      "Memory": "32GB DDR5 RAM",
+      "Storage": "1TB SSD NVMe PCIe Gen4",
+      "Display": "15.6-inch 3.5K (3456 x 2160) OLED Touch",
+      "Battery Life": "Up to 9 hours",
+      "Weight": "1.92 kg (4.2 lbs)"
+    },
+    "image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=600&q=80",
+    "featured": true,
+    "stock": 8
+  },
+  {
+    "id": "prod-3",
+    "name": "iPhone 15 Pro Max",
+    "category": "mobile",
+    "price": 1199.00,
+    "rating": 4.8,
+    "description": "Forged in titanium and featuring the groundbreaking A17 Pro chip, a customizable Action button, and the most powerful iPhone camera system ever.",
+    "specifications": {
+      "Processor": "A17 Pro chip with 6-core GPU",
+      "Memory": "8GB RAM",
+      "Storage": "256GB Storage",
+      "Display": "6.7-inch Super Retina XDR OLED 120Hz",
+      "Camera": "48MP Main + 12MP Ultra Wide + 12MP 5x Telephoto",
+      "Weight": "221g"
+    },
+    "image": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=600&q=80",
+    "featured": true,
+    "stock": 18
+  },
+  {
+    "id": "prod-4",
+    "name": "Samsung Galaxy S24 Ultra",
+    "category": "mobile",
+    "price": 1299.00,
+    "rating": 4.8,
+    "description": "Welcome to the era of mobile AI. With Galaxy S24 Ultra, unleash whole new levels of creativity, productivity and possibility, wrapped in titanium.",
+    "specifications": {
+      "Processor": "Snapdragon 8 Gen 3 for Galaxy",
+      "Memory": "12GB RAM",
+      "Storage": "512GB Storage",
+      "Display": "6.8-inch Dynamic AMOLED 2X QHD+ 120Hz",
+      "Camera": "200MP Main + 50MP + 12MP + 10MP Quad Camera",
+      "Weight": "232g"
+    },
+    "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=600&q=80",
+    "featured": true,
+    "stock": 15
+  },
+  {
+    "id": "prod-5",
+    "name": "Apple Watch Ultra 2",
+    "category": "smart watch",
+    "price": 799.00,
+    "rating": 4.9,
+    "description": "The most rugged and capable Apple Watch. Designed for outdoor adventures and supercharged workouts, with a lightweight titanium case and up to 36 hours of battery life.",
+    "specifications": {
+      "Processor": "S9 SiP with 64-bit dual-core processor",
+      "Display": "49mm Always-On Retina LTPO OLED (3000 nits)",
+      "Battery Life": "Up to 36 hours (72 hours in low power)",
+      "Water Resistance": "100m water resistant, recreational dive to 40m",
+      "Sensors": "Blood Oxygen, ECG, Temperature, Depth Gauge",
+      "Weight": "61.4g"
+    },
+    "image": "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?auto=format&fit=crop&w=600&q=80",
+    "featured": true,
+    "stock": 10
+  },
+  {
+    "id": "prod-6",
+    "name": "Sony WH-1000XM5",
+    "category": "headphones",
+    "price": 398.00,
+    "rating": 4.7,
+    "description": "Industry-leading active noise canceling headphones with exceptional sound quality, crystal-clear hands-free calling, and long-lasting comfort.",
+    "specifications": {
+      "Driver Unit": "30mm dome type",
+      "Battery Life": "Up to 30 hours (ANC ON), 38 hours (ANC OFF)",
+      "Charging Time": "Quick charge: 3 min for 3 hours playback",
+      "Connectivity": "Bluetooth 5.2, Multipoint Connection",
+      "Weight": "250g"
+    },
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80",
+    "featured": true,
+    "stock": 25
+  },
+  {
+    "id": "prod-7",
+    "name": "Bose QuietComfort Ultra",
+    "category": "headphones",
+    "price": 429.00,
+    "rating": 4.6,
+    "description": "High-end wireless noise-cancelling headphones featuring breakthrough spatial audio for immersive listening, and custom-tuned noise cancellation.",
+    "specifications": {
+      "Battery Life": "Up to 24 hours (18 hours with Immersive Audio)",
+      "Sound Mode": "Quiet Mode, Aware Mode, Immersion Mode",
+      "Connectivity": "Bluetooth 5.3, Snapdragon Sound",
+      "Weight": "252g"
+    },
+    "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "stock": 14
+  },
+  {
+    "id": "prod-8",
+    "name": "Keychron Q1 Pro",
+    "category": "keyboard",
+    "price": 199.00,
+    "rating": 4.8,
+    "description": "Full metal QMK/VIA custom mechanical keyboard. Designed with a double-gasket structure, CNC aluminum body, and wireless hot-swappable key switches.",
+    "specifications": {
+      "Layout": "75% ANSI Layout",
+      "Body Material": "Full CNC Machined Aluminum",
+      "Switches": "Keychron K Pro Red (Linear) Hot-swappable",
+      "Connectivity": "Bluetooth 5.1 / Type-C Wired",
+      "Backlight": "South-facing RGB LED"
+    },
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80",
+    "featured": true,
+    "stock": 20
+  },
+  {
+    "id": "prod-9",
+    "name": "Logitech MX Master 3S",
+    "category": "mouse",
+    "price": 99.00,
+    "rating": 4.9,
+    "description": "An icon remastered. Feel every moment of your workflow with even more precision, tactile feedback, and silence using Quiet Clicks and an 8K DPI track-on-glass sensor.",
+    "specifications": {
+      "Sensor": "Darkfield High Precision (8000 DPI)",
+      "Buttons": "7 Buttons with MagSpeed Electromagnetic Scroll Wheel",
+      "Battery Life": "Up to 70 days on a full charge",
+      "Connectivity": "Bluetooth Low Energy & Logi Bolt USB Receiver",
+      "Weight": "141g"
+    },
+    "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80",
+    "featured": true,
+    "stock": 35
+  },
+  {
+    "id": "prod-10",
+    "name": "Dell UltraSharp 32 4K USB-C Hub",
+    "category": "monitor",
+    "price": 849.00,
+    "rating": 4.7,
+    "description": "Experience brilliant color and superior black performance with a contrast ratio of 2000:1 on the world's first 31.5-inch 4K monitor with IPS Black technology.",
+    "specifications": {
+      "Screen Size": "31.5 inches",
+      "Resolution": "4K UHD (3840 x 2160)",
+      "Panel Type": "IPS Black Technology",
+      "Aspect Ratio": "16:9",
+      "Refresh Rate": "60Hz",
+      "Ports": "USB-C (90W Power Delivery), DisplayPort, HDMI, RJ45 Ethernet"
+    },
+    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=600&q=80",
+    "featured": true,
+    "stock": 9
+  },
+  {
+    "id": "prod-11",
+    "name": "Google Pixel 8 Pro",
+    "category": "mobile",
+    "price": 999.00,
+    "rating": 4.6,
+    "description": "The all-pro phone engineered by Google. It has the best of Google AI, the most advanced Pixel Camera yet, and can even edit photos like magic.",
+    "specifications": {
+      "Processor": "Google Tensor G3",
+      "Memory": "12GB RAM",
+      "Storage": "128GB Storage",
+      "Display": "6.7-inch Super Actua Display (1-120Hz)",
+      "Camera": "50MP Main + 48MP Quad PD Wide + 48MP 5x Telephoto",
+      "Weight": "213g"
+    },
+    "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "stock": 16
+  },
+  {
+    "id": "prod-12",
+    "name": "ASUS ROG Zephyrus G14",
+    "category": "laptop",
+    "price": 1599.00,
+    "rating": 4.8,
+    "description": "Powerful, portable, and visually stunning. The Zephyrus G14 packs AMD Ryzen processors and RTX graphics in an ultra-sleek chassis with a gorgeous ROG Nebula Display.",
+    "specifications": {
+      "Processor": "AMD Ryzen 9 7940HS (8-Core, up to 5.2 GHz)",
+      "Memory": "16GB DDR5 RAM",
+      "Storage": "1TB NVMe PCIe 4.0 SSD",
+      "Display": "14-inch QHD+ 165Hz ROG Nebula Display",
+      "Graphics": "NVIDIA GeForce RTX 4060 8GB GDDR6",
+      "Weight": "1.72 kg (3.8 lbs)"
+    },
+    "image": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "stock": 7
+  },
+  {
+    "id": "prod-13",
+    "name": "Sennheiser Momentum 4 Wireless",
+    "category": "headphones",
+    "price": 299.00,
+    "rating": 4.5,
+    "description": "Sennheiser's signature sound with class-leading 60-hour battery life. Features adaptive active noise cancellation and a refined fold-flat design.",
+    "specifications": {
+      "Driver Unit": "42mm dynamic driver",
+      "Battery Life": "Up to 60 hours",
+      "Charging Time": "2 hours for full charge, 5 min for 4 hours playback",
+      "Connectivity": "Bluetooth 5.2, aptX Adaptive",
+      "Weight": "293g"
+    },
+    "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "stock": 22
+  },
+  {
+    "id": "prod-14",
+    "name": "Samsung Galaxy Watch 6 Classic",
+    "category": "smart watch",
+    "price": 369.00,
+    "rating": 4.6,
+    "description": "The return of the rotating bezel. Track your workouts, monitor your sleep, and manage notifications with this classic stainless steel smartwatch.",
+    "specifications": {
+      "Processor": "Exynos W930 Dual-Core 1.4GHz",
+      "Display": "47mm Super AMOLED Always-On Display",
+      "Battery Life": "Up to 40 hours",
+      "Sensors": "BioActive Sensor (HR, ECG, BIA), Temperature, Barometer",
+      "Weight": "59.0g"
+    },
+    "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "stock": 11
+  },
+  {
+    "id": "prod-15",
+    "name": "Logitech MX Keys S",
+    "category": "keyboard",
+    "price": 119.00,
+    "rating": 4.8,
+    "description": "Low-profile wireless keyboard crafted for comfort, speed, and precision, with smart illumination and fluid keys that match the shape of your fingertips.",
+    "specifications": {
+      "Layout": "Full size (100% layout)",
+      "Switches": "Low-profile tactile switches",
+      "Connectivity": "Bluetooth Low Energy & Logi Bolt USB Receiver",
+      "Battery Life": "Up to 10 days with backlight, 5 months without",
+      "Weight": "810g"
+    },
+    "image": "https://images.unsplash.com/photo-1626958390898-162d3577f593?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "stock": 30
+  },
+  {
+    "id": "prod-16",
+    "name": "Razer DeathAdder V3 Pro",
+    "category": "mouse",
+    "price": 149.00,
+    "rating": 4.7,
+    "description": "Ultra-lightweight wireless ergonomic gaming mouse. Designed with esports pros for maximum comfort, 30K DPI optical sensor, and zero-latency wireless connectivity.",
+    "specifications": {
+      "Sensor": "Focus Pro 30K Optical Sensor",
+      "Weight": "63g ultra-lightweight design",
+      "Switches": "Optical Mouse Switches Gen-3 (90M clicks)",
+      "Battery Life": "Up to 90 hours at 1000Hz polling",
+      "Connectivity": "Razer HyperSpeed Wireless / Wired"
+    },
+    "image": "https://images.unsplash.com/photo-1625842268584-8f329040ff31?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "stock": 15
+  },
+  {
+    "id": "prod-17",
+    "name": "LG UltraGear 27\" OLED Gaming Monitor",
+    "category": "monitor",
+    "price": 899.00,
+    "rating": 4.8,
+    "description": "Unrivaled speed and visuals. The 240Hz refresh rate OLED screen delivers near-instant 0.03ms response times and deep, realistic contrast.",
+    "specifications": {
+      "Screen Size": "27 inches",
+      "Resolution": "QHD (2560 x 1440)",
+      "Panel Type": "OLED Display",
+      "Refresh Rate": "240Hz",
+      "Response Time": "0.03ms (GtG)",
+      "Adaptive Sync": "NVIDIA G-SYNC Compatible & AMD FreeSync Premium Pro"
+    },
+    "image": "https://images.unsplash.com/photo-1547119957-637f8679db1e?auto=format&fit=crop&w=600&q=80",
+    "featured": true,
+    "stock": 6
+  },
+  {
+    "id": "prod-18",
+    "name": "Lenovo ThinkPad X1 Carbon Gen 11",
+    "category": "laptop",
+    "price": 1749.00,
+    "rating": 4.7,
+    "description": "The ultimate business ultrabook. Lightweight carbon-fiber weave chassis, military-grade durability, and legendary spill-resistant keyboard.",
+    "specifications": {
+      "Processor": "Intel Core i7-1355U vPro (10-Core, up to 5.0 GHz)",
+      "Memory": "32GB LPDDR5 RAM",
+      "Storage": "1TB PCIe Gen4 SSD",
+      "Display": "14-inch WUXGA (1920 x 1200) IPS Anti-glare",
+      "Security": "Match-on-Chip Fingerprint Reader, IR Camera",
+      "Weight": "1.12 kg (2.48 lbs)"
+    },
+    "image": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "stock": 9
+  },
+  {
+    "id": "prod-19",
+    "name": "OnePlus 12 5G",
+    "category": "mobile",
+    "price": 799.00,
+    "rating": 4.5,
+    "description": "Redefined flagship performance. Features the Snapdragon 8 Gen 3, a 4th Gen Hasselblad Camera System, and blazing-fast 100W SuperVOOC charging.",
+    "specifications": {
+      "Processor": "Snapdragon 8 Gen 3",
+      "Memory": "16GB LPDDR5X RAM",
+      "Storage": "512GB Storage",
+      "Display": "6.82-inch 2K 120Hz ProXDR Display (4500 nits peak)",
+      "Battery": "5400 mAh with 100W wired & 50W wireless charge",
+      "Weight": "220g"
+    },
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "stock": 20
+  },
+  {
+    "id": "prod-20",
+    "name": "Garmin Fenix 7 Pro Sapphire Solar",
+    "category": "smart watch",
+    "price": 899.00,
+    "rating": 4.9,
+    "description": "The ultimate multisport GPS watch. Features a solar charging lens, built-in LED flashlight, advanced training metrics, and preloaded topo maps.",
+    "specifications": {
+      "Lens Material": "Power Sapphire (Solar Charging)",
+      "Display": "1.3-inch sunlight-visible, transflective memory-in-pixel",
+      "Battery Life": "Up to 22 days in smartwatch mode with solar",
+      "Water Resistance": "10 ATM (100 meters)",
+      "GPS": "Multi-band GPS with SatIQ technology",
+      "Weight": "73g"
+    },
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "stock": 5
+  },
+  {
+    "id": "prod-21",
+    "name": "SteelSeries Apex Pro TKL",
+    "category": "keyboard",
+    "price": 189.00,
+    "rating": 4.7,
+    "description": "The world's fastest mechanical keyboard. Features OmniPoint 2.0 adjustable switches for 11x faster response and 40x actuation customization.",
+    "specifications": {
+      "Layout": "Tenkeyless (TKL) 80%",
+      "Switches": "OmniPoint 2.0 Adjustable HyperMagnetic Switches",
+      "Actuation Range": "0.1mm to 4.0mm",
+      "Display": "Smart OLED Display",
+      "Body Material": "Aircraft-grade Aluminum Alloy Frame"
+    },
+    "image": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "stock": 14
+  },
+  {
+    "id": "prod-22",
+    "name": "Logitech G502 X Plus Wireless",
+    "category": "mouse",
+    "price": 159.00,
+    "rating": 4.8,
+    "description": "Remastered gaming icon. Blends lightspeed wireless performance with brand new LIGHTFORCE hybrid optical-mechanical switches and active RGB styling.",
+    "specifications": {
+      "Sensor": "HERO 25K Sensor",
+      "Switches": "Lightforce Hybrid Switches",
+      "Connectivity": "Lightspeed Wireless / Wired",
+      "Battery Life": "Up to 120 hours (37 hours with RGB active)",
+      "Weight": "106g"
+    },
+    "image": "https://images.unsplash.com/photo-1629429408209-1f912961dbd8?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "stock": 25
+  },
+  {
+    "id": "prod-23",
+    "name": "Samsung Odyssey G9 49\" Curved",
+    "category": "monitor",
+    "price": 1299.00,
+    "rating": 4.8,
+    "description": "Revolutionary ultra-wide curved gaming monitor. The 1000R curved screen matches the curvature of the human eye for maximum immersion and minimal strain.",
+    "specifications": {
+      "Screen Size": "49 inches Super Ultra-Wide",
+      "Resolution": "Dual QHD (5120 x 1440)",
+      "Curvature": "1000R Curved Screen",
+      "Refresh Rate": "240Hz",
+      "Panel Type": "VA QLED with Mini-LED backlighting",
+      "Response Time": "1ms (GtG)"
+    },
+    "image": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=600&q=80",
+    "featured": true,
+    "stock": 4
+  },
+  {
+    "id": "prod-24",
+    "name": "Sennheiser HD 660S2",
+    "category": "headphones",
+    "price": 499.00,
+    "rating": 4.8,
+    "description": "Audiophile open-back headphones. Designed for standard-setting detail, emotional impact, and an extended bass response that takes music to new heights.",
+    "specifications": {
+      "Acoustic Principle": "Open-Back Dynamic",
+      "Impedance": "300 Ohms",
+      "Frequency Response": "8 - 41,500 Hz",
+      "Driver Size": "38mm transducer",
+      "Weight": "260g"
+    },
+    "image": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "stock": 8
+  },
+  {
+    "id": "prod-25",
+    "name": "Amazfit GTR 4 Smartwatch",
+    "category": "smart watch",
+    "price": 199.00,
+    "rating": 4.4,
+    "description": "Classic look with premium tracking. Features dual-band circularly-polarized GPS antennas, 150+ sports modes, and up to 14 days of battery life.",
+    "specifications": {
+      "Display": "1.43-inch HD AMOLED Display (Tempered glass)",
+      "Battery Life": "Up to 14 days (typical usage)",
+      "GPS": "Dual-band & 6 Satellite Positioning Systems",
+      "Sensors": "BioTracker 4.0 PPG Bio-tracking sensor",
+      "Water Resistance": "5 ATM"
+    },
+    "image": "https://images.unsplash.com/photo-1517502884422-41eaaced0168?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "stock": 19
+  }
+]

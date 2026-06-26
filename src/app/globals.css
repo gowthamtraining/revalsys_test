@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@import "../styles/variables.css";
+
+@theme {
+  --color-brand-primary: var(--primary);
+  --color-brand-primary-hover: var(--primary-hover);
+  --color-brand-primary-light: var(--primary-light);
+  
+  --color-brand-secondary: var(--secondary);
+  --color-brand-secondary-hover: var(--secondary-hover);
+  
+  --color-brand-accent: var(--accent);
+  --color-brand-accent-hover: var(--accent-hover);
+  
+  --color-brand-danger: var(--danger);
+  --color-brand-danger-hover: var(--danger-hover);
+  --color-brand-success: var(--success);
+  --color-brand-success-hover: var(--success-hover);
+  
+  --color-bg-main: var(--bg-primary);
+  --color-bg-card: var(--bg-secondary);
+  --color-bg-alt: var(--bg-tertiary);
+  
+  --color-txt-main: var(--text-primary);
+  --color-txt-muted: var(--text-secondary);
+  --color-txt-dim: var(--text-tertiary);
+  
+  --color-border-main: var(--border);
+  --color-ring-main: var(--ring);
+  
+  --shadow-card: var(--card-shadow);
+  --shadow-card-hover: var(--card-shadow-hover);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Glassmorphism utility */
+.glassmorphic {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.dark .glassmorphic {
+  background: rgba(19, 28, 46, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Micro-animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
