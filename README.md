@@ -132,9 +132,9 @@ We use a unified `generateSEO` utility which generates standard titles, keywords
 ---
 
 ## ⚠️ Assumptions and Limitations
-- **No Backend database**: All datasets are resolved from local JSON stores.
-- **Simulated Payment Gateway**: Checking out triggers a success modal confirming the totals, clear-out actions, and catalog redirects.
-- **Simulated Sign-in**: Validation is run client-side on username inputs, writing state indicators to local storage.
+- **Mock Database Initialization**: The application relies on local JSON database files (`products.json` and `categories.json`) for data seeding, which is loaded into the Redux store during startup. No remote database or external REST APIs are called.
+- **Client-Side Simulated Authorization Flow**: Authentication is handled entirely client-side with input validation rules. No real security tokens, cookies, OAuth protocols, or server-side session checks are implemented.
+- **Simulated Checkout Gateways**: Checking out triggers a success modal confirming the final totals, clears the shopping cart, and redirects to the catalog. No actual payment gateways (such as Stripe or PayPal) are connected.
 
 ---
 

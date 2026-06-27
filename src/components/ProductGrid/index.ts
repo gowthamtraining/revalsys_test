@@ -1,2 +1,2 @@
-export { ProductGrid } from './ProductGrid.tsx';
-export type { ProductGridProps } from './ProductGrid.tsx';
+export { ProductGrid } from './ProductGrid';
+export type { ProductGridProps } from './type';

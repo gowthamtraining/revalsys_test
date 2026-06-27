@@ -1,2 +1,2 @@
-export { FilterSidebar } from './FilterSidebar.tsx';
-export type { FilterSidebarProps } from './FilterSidebar.tsx';
+export { FilterSidebar } from './FilterSidebar';
+export type { FilterSidebarProps } from './types';

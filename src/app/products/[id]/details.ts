@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
+import { useForm } from 'react-hook-form';
 import { useAppDispatch, useAppSelector } from '../../../redux/hooks';
 import { selectProductById, selectIsInWishlist, selectAllProducts } from '../../../redux/selectors/productSelectors';
 import { toggleWishlist } from '../../../redux/slices/wishlistSlice';
@@ -9,30 +10,41 @@ import { ROUTES } from '../../../constants/routes';
 export const useProductDetails = (id: string) => {
   const dispatch = useAppDispatch();
 
-
   const product = useAppSelector(selectProductById(id));
   const isWishlisted = useAppSelector(selectIsInWishlist(id));
   const allProducts = useAppSelector(selectAllProducts);
 
-  const [quantity, setQuantity] = useState(1);
-  const [selectedImage, setSelectedImage] = useState('');
-  const [toastMessage, setToastMessage] = useState<string | null>(null);
-  const [isCopied, setIsCopied] = useState(false);
+  const { watch, setValue } = useForm({
+    defaultValues: {
+      quantity: 1,
+      selectedImage: '',
+      toastMessage: null as string | null,
+      isCopied: false,
+      galleryImages: [] as string[]
+    }
+  });
 
-  const [galleryImages, setGalleryImages] = useState<string[]>([]);
+  const quantity = watch('quantity');
+  const selectedImage = watch('selectedImage');
+  const toastMessage = watch('toastMessage');
+  const isCopied = watch('isCopied');
+  const galleryImages = watch('galleryImages');
+
+  const setQuantity = (val: number) => setValue('quantity', val);
+  const setSelectedImage = (val: string) => setValue('selectedImage', val);
 
   useEffect(() => {
     if (product) {
-      setSelectedImage(product.image);
-      setGalleryImages([
+      setValue('selectedImage', product.image);
+      setValue('galleryImages', [
         product.image,
         `${product.image}&blur=2`,
         `${product.image}&sat=-50`,
         `${product.image}&hue=180`
       ]);
-      setQuantity(1);
+      setValue('quantity', 1);
     }
-  }, [product]);
+  }, [product, setValue]);
 
   const handleToggleWishlist = () => {
     if (!product) return;
@@ -49,15 +61,15 @@ export const useProductDetails = (id: string) => {
   const handleCopyLink = () => {
     if (typeof window === 'undefined') return;
     navigator.clipboard.writeText(window.location.href);
-    setIsCopied(true);
+    setValue('isCopied', true);
     showToast('Product link copied to clipboard!');
-    setTimeout(() => setIsCopied(false), 2000);
+    setTimeout(() => setValue('isCopied', false), 2000);
   };
 
   const showToast = (message: string) => {
-    setToastMessage(message);
+    setValue('toastMessage', message);
     setTimeout(() => {
-      setToastMessage(null);
+      setValue('toastMessage', null);
     }, 3000);
   };
 

@@ -1,2 +1,2 @@
-export { Loader } from './Loader.tsx';
-export type { LoaderProps } from './Loader.tsx';
+export { Loader } from './Loader';
+export type { LoaderProps } from './type';

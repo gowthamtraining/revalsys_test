@@ -62,7 +62,7 @@ export default function ProductDetailsPage({ params }: PageProps) {
           <div className="aspect-square w-full rounded-2xl border border-border-main bg-bg-card overflow-hidden relative shadow-sm group">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={selectedImage}
+              src={selectedImage || ""}
               alt={product.name}
               className="object-contain w-full h-full p-6 transition-transform duration-500 group-hover:scale-[1.03]"
             />
@@ -73,11 +73,10 @@ export default function ProductDetailsPage({ params }: PageProps) {
                 key={idx}
                 type="button"
                 onClick={() => setSelectedImage(img)}
-                className={`aspect-square rounded-xl border overflow-hidden bg-bg-card p-2 transition-all cursor-pointer ${
-                  selectedImage === img
-                    ? 'border-brand-primary ring-2 ring-brand-primary/20'
-                    : 'border-border-main hover:border-txt-muted'
-                }`}
+                className={`aspect-square rounded-xl border overflow-hidden bg-bg-card p-2 transition-all cursor-pointer ${selectedImage === img
+                  ? 'border-brand-primary ring-2 ring-brand-primary/20'
+                  : 'border-border-main hover:border-txt-muted'
+                  }`}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -105,9 +104,8 @@ export default function ProductDetailsPage({ params }: PageProps) {
             <button
               type="button"
               onClick={handleCopyLink}
-              className={`p-2.5 rounded-xl border border-border-main bg-bg-card hover:bg-bg-alt text-txt-muted hover:text-txt-main transition-all cursor-pointer shadow-sm ${
-                isCopied ? 'text-brand-success border-brand-success/30 bg-brand-success/5' : ''
-              }`}
+              className={`p-2.5 rounded-xl border border-border-main bg-bg-card hover:bg-bg-alt text-txt-muted hover:text-txt-main transition-all cursor-pointer shadow-sm ${isCopied ? 'text-brand-success border-brand-success/30 bg-brand-success/5' : ''
+                }`}
               aria-label="Share product link"
             >
               {isCopied ? <Check className="w-5 h-5 text-brand-success" /> : <Share2 className="w-5 h-5" />}
@@ -119,9 +117,8 @@ export default function ProductDetailsPage({ params }: PageProps) {
               {Array.from({ length: 5 }).map((_, idx) => (
                 <Star
                   key={idx}
-                  className={`w-4 h-4 ${
-                    idx < Math.round(product.rating) ? 'fill-current' : 'text-border-main'
-                  }`}
+                  className={`w-4 h-4 ${idx < Math.round(product.rating) ? 'fill-current' : 'text-border-main'
+                    }`}
                 />
               ))}
             </div>
@@ -178,11 +175,10 @@ export default function ProductDetailsPage({ params }: PageProps) {
                 <button
                   type="button"
                   onClick={handleToggleWishlist}
-                  className={`p-3 h-10 border rounded-lg flex items-center justify-center shadow-sm transition-all cursor-pointer ${
-                    isWishlisted
-                      ? 'bg-brand-danger/10 border-brand-danger text-brand-danger'
-                      : 'bg-bg-card border-border-main text-txt-muted hover:text-brand-danger hover:bg-bg-alt'
-                  }`}
+                  className={`p-3 h-10 border rounded-lg flex items-center justify-center shadow-sm transition-all cursor-pointer ${isWishlisted
+                    ? 'bg-brand-danger/10 border-brand-danger text-brand-danger'
+                    : 'bg-bg-card border-border-main text-txt-muted hover:text-brand-danger hover:bg-bg-alt'
+                    }`}
                   aria-label={isWishlisted ? 'Remove from wishlist' : 'Add to wishlist'}
                 >
                   <Heart className="w-5 h-5 fill-current" />

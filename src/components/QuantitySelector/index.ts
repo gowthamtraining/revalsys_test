@@ -1,2 +1,2 @@
-export { QuantitySelector } from './QuantitySelector.tsx';
-export type { QuantitySelectorProps } from './QuantitySelector.tsx';
+export { QuantitySelector } from './QuantitySelector';
+export type { QuantitySelectorProps } from './type';

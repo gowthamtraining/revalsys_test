@@ -1,2 +1,2 @@
-export { EmptyState } from './EmptyState.tsx';
+export { EmptyState } from './EmptyState';
 export type { EmptyStateProps } from './EmptyStateType.ts';

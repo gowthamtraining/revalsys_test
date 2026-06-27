@@ -1,2 +1,2 @@
-export { Breadcrumb } from './Breadcrumb.tsx';
+export { Breadcrumb } from './Breadcrumb';
 export type { BreadcrumbItem, BreadcrumbProps } from './types';
