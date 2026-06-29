@@ -7,7 +7,7 @@ Designed to showcase senior-level frontend architecture, modular component struc
 ---
 
 ## 🔗 Source Code Repository
-- **GitHub Repository**: [https://github.com/username/electro-show](https://github.com/username/electro-show) *(simulated production workspace)*
+- **GitHub Repository**: [https://github.com/gowthamtraining/revalsys_test](https://github.com/gowthamtraining/revalsys_test)
 
 ---
 
