@@ -9,6 +9,7 @@ import { Pagination } from '../../components/Pagination';
 import { EmptyState } from '../../components/EmptyState';
 import { Loader } from '../../components/Loader';
 import { FilterSidebar } from '@/components/FilterSidebar';
+import { Button } from '../../components/Button';
 
 function ProductCatalogContent() {
   const {
@@ -45,14 +46,15 @@ function ProductCatalogContent() {
             placeholder="Search gadgets, accessories..."
             className="flex-grow sm:flex-grow-0"
           />
-          <button
+          <Button
             type="button"
             onClick={() => setIsMobileFilterOpen(true)}
-            className="lg:hidden flex items-center gap-2 px-4 py-2.5 bg-bg-card border border-border-main text-txt-main font-semibold text-sm rounded-xl hover:bg-bg-alt active:scale-[0.98] transition-all cursor-pointer"
+            variant="outline"
+            className="lg:hidden flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-xl"
           >
             <SlidersHorizontal className="w-4 h-4 text-brand-primary" />
             Filters
-          </button>
+          </Button>
         </div>
       </div>
 

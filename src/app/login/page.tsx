@@ -102,13 +102,14 @@ export default function LoginPage() {
         </div>
 
         <div>
-          <button
+          <Button
             type="button"
             onClick={handleGuestLogin}
-            className="w-full py-3 bg-bg-alt border border-border-main text-txt-main font-semibold rounded-xl text-sm hover:bg-bg-alt/60 active:scale-[0.98] transition-all cursor-pointer shadow-sm"
+            variant="outline"
+            className="w-full py-3 text-sm font-semibold cursor-pointer shadow-sm"
           >
             Check in as Guest User
-          </button>
+          </Button>
         </div>
       </div>
 

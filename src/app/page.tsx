@@ -10,6 +10,8 @@ import { ProductGrid } from '../components/ProductGrid';
 import { Button } from '../components/Button';
 import categoriesData from '../data/categories.json';
 import { ROUTES } from '../constants/routes';
+import { TestimonialCard } from '../components/TestimonialCard';
+import testimonialsData from '../data/testimonials.json';
 
 export default function HomePage() {
   const featuredProducts = useAppSelector(selectFeaturedProducts);
@@ -142,71 +144,17 @@ export default function HomePage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-bg-card p-6 rounded-2xl border border-border-main shadow-sm flex flex-col justify-between">
-            <div className="space-y-4">
-              <div className="flex text-amber-400">
-                {Array.from({ length: 5 }).map((_, idx) => (
-                  <Star key={idx} className="w-4 h-4 fill-current" />
-                ))}
-              </div>
-              <p className="text-sm text-txt-muted italic leading-relaxed">
-                "The MacBook Pro M3 was delivered in pristine condition within 2 days! The customer service was exceptionally supportive. Highly recommend ElectroShow."
-              </p>
-            </div>
-            <div className="mt-6 flex items-center gap-3 border-t border-border-main pt-4">
-              <div className="w-10 h-10 bg-brand-primary text-white rounded-full flex items-center justify-center font-bold text-sm">
-                JD
-              </div>
-              <div>
-                <h4 className="font-semibold text-sm text-txt-main">John Doe</h4>
-                <p className="text-xs text-txt-dim">Software Developer</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-bg-card p-6 rounded-2xl border border-border-main shadow-sm flex flex-col justify-between">
-            <div className="space-y-4">
-              <div className="flex text-amber-400">
-                {Array.from({ length: 5 }).map((_, idx) => (
-                  <Star key={idx} className="w-4 h-4 fill-current" />
-                ))}
-              </div>
-              <p className="text-sm text-txt-muted italic leading-relaxed">
-                "Finding key mechanical keyboards in stock is usually tough, but ElectroShow had the Keychron Q1 Pro ready to ship. Phenomenal website experience."
-              </p>
-            </div>
-            <div className="mt-6 flex items-center gap-3 border-t border-border-main pt-4">
-              <div className="w-10 h-10 bg-brand-accent text-white rounded-full flex items-center justify-center font-bold text-sm">
-                AS
-              </div>
-              <div>
-                <h4 className="font-semibold text-sm text-txt-main">Alice Smith</h4>
-                <p className="text-xs text-txt-dim">UI/UX Designer</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-bg-card p-6 rounded-2xl border border-border-main shadow-sm flex flex-col justify-between">
-            <div className="space-y-4">
-              <div className="flex text-amber-400">
-                {Array.from({ length: 5 }).map((_, idx) => (
-                  <Star key={idx} className="w-4 h-4 fill-current" />
-                ))}
-              </div>
-              <p className="text-sm text-txt-muted italic leading-relaxed">
-                "My Sony headphones are fantastic. Using Redux cart worked flawlessly, and local storage remembered my checkout options. Pure technical excellence!"
-              </p>
-            </div>
-            <div className="mt-6 flex items-center gap-3 border-t border-border-main pt-4">
-              <div className="w-10 h-10 bg-brand-success text-white rounded-full flex items-center justify-center font-bold text-sm">
-                MB
-              </div>
-              <div>
-                <h4 className="font-semibold text-sm text-txt-main">Marcus Brown</h4>
-                <p className="text-xs text-txt-dim">Audio Engineer</p>
-              </div>
-            </div>
-          </div>
+          {testimonialsData.map((item) => (
+            <TestimonialCard
+              key={item.id}
+              quote={item.quote}
+              initials={item.initials}
+              name={item.name}
+              role={item.role}
+              avatarBg={item.avatarBg}
+              rating={item.rating}
+            />
+          ))}
         </div>
       </section>
     </div>

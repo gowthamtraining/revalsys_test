@@ -1,0 +1,29 @@
+[
+  {
+    "id": "t1",
+    "quote": "The MacBook Pro M3 was delivered in pristine condition within 2 days! The customer service was exceptionally supportive. Highly recommend ElectroShow.",
+    "initials": "JD",
+    "name": "John Doe",
+    "role": "Software Developer",
+    "avatarBg": "bg-brand-primary",
+    "rating": 5
+  },
+  {
+    "id": "t2",
+    "quote": "Finding key mechanical keyboards in stock is usually tough, but ElectroShow had the Keychron Q1 Pro ready to ship. Phenomenal website experience.",
+    "initials": "AS",
+    "name": "Alice Smith",
+    "role": "UI/UX Designer",
+    "avatarBg": "bg-brand-accent",
+    "rating": 5
+  },
+  {
+    "id": "t3",
+    "quote": "My Sony headphones are fantastic. Using Redux cart worked flawlessly, and local storage remembered my checkout options. Pure technical excellence!",
+    "initials": "MB",
+    "name": "Marcus Brown",
+    "role": "Audio Engineer",
+    "avatarBg": "bg-brand-success",
+    "rating": 5
+  }
+]
